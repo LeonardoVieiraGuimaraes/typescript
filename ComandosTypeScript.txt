@@ -1,0 +1,18 @@
+npm install typescript --save-dev  //iniciar projeto typesctype
+
+npx tsc                            //executar comandos 
+
+npm install                        // instalar pacotes e dependencias
+
+npx tsc -init                      // inicar tsconfig
+
+
+ "outDir": "./dist/js/",                                   /* Specify an output folder for all emitted files. */
+
+ "rootDir": "./src",                                  /* Specify the root folder within your source files. */
+
+npx tsc --w i                                      // inicar servidor
+
+"removeComments": true,                           /* Disable emitting 
+
+"experimentalDecorators": true,                   /* Enable experimental
