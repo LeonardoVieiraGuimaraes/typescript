@@ -318,3 +318,37 @@ meuMap.forEach((valor, chave) => console.log(chave,valor))
 for (const [chave, valor] of meuMap){
   console.log(chave, valor);
 }
+
+meuMap.delete("chave1");
+
+console.log(meuMap);
+
+const temChave1 = meuMap.has("chave2");
+console.log(temChave1);
+
+const meuMap2 = new Map<string, number>();
+
+meuMap2.set("chave1", 1);
+meuMap2.set("chave2", 2);
+meuMap2.set("chave3", 3);
+meuMap2.set("chave4", 4);
+
+console.log(meuMap2);
+
+type MeuTipo = {
+  name: string;
+  idade: number;
+};
+
+const meuMap3 = new Map<string, MeuTipo>();
+
+meuMap3.set("chave1", { name: "Jorge", idade: 30 });
+meuMap3.set("chave2", { name: "João", idade: 20 });
+meuMap3.set("chave3", { name: "Maria", idade: 40 });
+
+console.log(meuMap3);
+
+
+
+
+
