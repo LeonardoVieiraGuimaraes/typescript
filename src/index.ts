@@ -294,3 +294,27 @@ class Person {
 
 const sam = new Person("Sam");
 console.log(sam);
+
+
+// Map
+const meuMap = new Map();
+
+meuMap.set("chave1", "Valor1");
+meuMap.set("chave2", "Valor2");
+meuMap.set("chave3", "Valor3");
+meuMap.set("chave4", "Valor4");
+
+console.log(meuMap);
+
+const Valor1 = meuMap.get("chave1");
+console.log(Valor1);
+
+meuMap.forEach(function(valor, chave) {
+  console.log(chave,valor);
+})
+
+meuMap.forEach((valor, chave) => console.log(chave,valor))
+
+for (const [chave, valor] of meuMap){
+  console.log(chave, valor);
+}
